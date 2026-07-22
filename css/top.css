@@ -1,0 +1,19 @@
+.p-section-hero {
+    background: #FFFBE8;
+}
+
+.p-section-hero .wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.p-section-hero__title {
+    font-size: 48px;
+    line-height: calc(56/48);
+    color: #132238;
+    font-weight: 400;
+}
+.p-section-hero__actions {
+    display: flex;
+    gap: 16px;
+}
