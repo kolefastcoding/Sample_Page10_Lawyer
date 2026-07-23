@@ -1,5 +1,6 @@
 .p-section-hero {
     background: #FFFBE8;
+    padding: 99px;
 }
 
 .p-section-hero .wrapper {
@@ -7,13 +8,194 @@
     align-items: center;
 }
 
+.p-section-hero__content {
+    max-width: 568px;
+    flex: 1;
+    margin-right: 132px;
+}
+
 .p-section-hero__title {
     font-size: 48px;
     line-height: calc(56/48);
     color: #132238;
     font-weight: 400;
+    margin-bottom: 24px;
 }
+
+.p-section-hero__high {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: calc(56/48);
+    color: #132238;
+}
+
+.p-section-hero__description {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: calc(28/20);
+    color: #424E60;
+    margin-bottom: 32px;
+}
+
 .p-section-hero__actions {
     display: flex;
     gap: 16px;
 }
+
+.p-section-hero__media {
+
+    width: 470px;
+}
+
+.p-section-brand {
+    padding: 100px;
+    background: #FFFFFF;
+}
+
+.p-section-brand .wrapper {}
+
+.p-section-brand__heading {}
+
+/* cần fix lại */
+.p-section-brand__title {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: calc(40/32);
+    color: #132238;
+    margin-bottom: 91px;
+}
+
+.p-section-brand__high-peoples {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: calc(40/32);
+    color: #1777E5;
+}
+
+.p-section-brand__list {
+    display: flex;
+}
+
+.p-section-brand__item {}
+
+.p-section-brand__link {}
+
+.p-section-experience {
+    padding-bottom: 100px;
+}
+
+.p-section-experience .wrapper {}
+
+.p-section-experience__head {
+    text-align: center;
+
+}
+
+.p-section-experience__title {
+    font-size: 40px;
+    line-height: calc(48/40);
+    font-weight: 600;
+    color: #132238;
+    margin-bottom: 24px;
+}
+
+.p-section-experience__description {
+    max-width: 370px;
+    font-size: 16px;
+    line-height: calc(24/16);
+    font-weight: 400;
+    color: #424E60;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.p-section-experience__body {
+    display: flex;
+    align-items: center;
+}
+
+.p-section-experience__media {
+    width: 500px;
+    border-radius: 4px;
+}
+
+.p-section-experience__table {
+    max-width: 600px;
+    margin-left: 70px
+}
+
+.p-section-experience__row {
+    display: flex;
+    margin-bottom: 64px;
+}
+
+.p-section-experience__left {}
+
+.p-section-experience__high {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: calc(24/16);
+    color: #1777E5;
+}
+
+.p-section-experience__time {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: calc(20/14);
+    color: #697484;
+}
+
+.p-section-experience__right {}
+
+.p-section-experience__text {
+    font-size: 20px;
+    line-height: calc(28/20);
+    color: #132238;
+    font-weight: 600;
+}
+
+.p-section-experience__information {
+    font-size: 16px;
+    line-height: calc(24/16);
+    font-weight: 400;
+    color: #556070;
+}
+
+.p-section-experience__row:last-child {
+    margin-bottom: 0;
+}
+
+.p-section-statistics {
+    background: #132238;
+    padding: 100px;
+}
+
+.p-section-statistics .wrapper {}
+
+.p-section-statistics__list {
+    display: flex;
+}
+
+.p-section-statistics__item {
+    width: 270px;
+    height: 64px;
+}
+
+.p-section-about {
+    background: #F0F1F3;
+    padding: 100px;
+}
+
+.p-section-about .wrapper {}
+
+.p-section-about__media {
+    width: 570px;
+}
+
+.p-section-about__head {}
+
+.p-section-about__title {}
+
+.p-section-about__body {}
+
+.p-section-about__description {}
