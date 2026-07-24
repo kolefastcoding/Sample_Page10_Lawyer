@@ -28,6 +28,7 @@ img {
 
 .l-header__nav-list {
     display: flex;
+    gap: 24px;
 }
 
 .l-header__nav-link {
@@ -35,7 +36,18 @@ img {
     line-height: calc(24/16);
     color: #697484;
     font-weight: 400;
-    padding: 0 13px;
+    /* padding: 0 13px; */
+    padding-bottom: 37px;
+    border-bottom: 3px solid transparent;
+    transition: .3s;
+}
+.l-header__nav-link:hover,
+.l-header__nav-link.is-active {
+    font-size: 16px;
+    line-height: calc(24/16);
+    font-weight: 600;
+    color: #1777E5;
+    border-bottom-color: #1777E5;
 }
 
 .l-header__social-list {

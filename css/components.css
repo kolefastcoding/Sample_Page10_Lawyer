@@ -2,18 +2,29 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-height: 56px;
     padding-inline: 32px;
-
+    border-radius: 5px;
     gap: 12px;
+    font-size: 16px;
+    line-height: calc(56/16);
+    font-weight: 600;
+    box-shadow: 0 8px 32px 0 #13223814;
 }
 
 .c-button--primary {
     background: #1777E5;
     color: #FFFFFF;
+    
 }
-
+.c-button--primary:hover {
+    background: #132238;
+    color: #FFFFFF;
+}
 .c-button--outline {
-    background: #FFFFFF;
+    background: #E8F1FC;
     color: #1777E5;
+}
+.c-button--outline:hover {
+    background: #1777E5;
+    color: #FFFFFF;
 }

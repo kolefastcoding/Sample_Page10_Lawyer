@@ -43,7 +43,6 @@
 }
 
 .p-section-hero__media {
-
     width: 470px;
 }
 
@@ -62,7 +61,8 @@
     font-weight: 400;
     line-height: calc(40/32);
     color: #132238;
-    margin-bottom: 91px;
+    margin-bottom: 50px;
+
 }
 
 .p-section-brand__high-peoples {
@@ -74,6 +74,7 @@
 
 .p-section-brand__list {
     display: flex;
+    gap: 30px;
 }
 
 .p-section-brand__item {}
@@ -199,3 +200,35 @@
 .p-section-about__body {}
 
 .p-section-about__description {}
+
+.p-section-education {
+    padding: 100px;
+    background: #FFFFFF;
+}
+.p-section-education .wrapper {
+    
+}
+.p-section-education__head {
+
+}
+.p-section-education__title {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: calc(48/40);
+    color: #132238;
+}
+.p-section-education__description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: calc(24/16);
+    color: #424E60;
+}
+.p-section-education__body {
+
+}
+.p-section-education__left {
+
+}
+.p-section-education__right {
+
+}
