@@ -7,10 +7,8 @@
     <title>Page 10 Lawyer</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/variables.css">
-    <link rel="stylesheet" href="./css/components.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/top.css">
-    <link rel="stylesheet" href="./css/responsive.css">
 </head>
 
 <body>
@@ -64,7 +62,7 @@
             </div>
         </header>
         <main class="l-main">
-            <section class="p-section-hero" id="Home">
+            <section class="p-section-hero" id="home">
                 <div class="wrapper">
                     <div class="p-section-hero__content">
                         <h1 class="p-section-hero__title">
@@ -76,8 +74,8 @@
                             ut, pharetra venenatis enim.
                         </p>
                         <div class="p-section-hero__actions">
-                            <a href="" class="c-button c-button--primary">Book Appointments</a>
-                            <a href="" class="c-button c-button--outline">Customer Feedback</a>
+                            <a href="#contact" class="c-button c-button--primary">Book Appointments</a>
+                            <a href="#testimonial" class="c-button c-button--outline">Customer Feedback</a>
                         </div>
                     </div>
                     <figure class="p-section-hero__media">
@@ -86,7 +84,7 @@
                     </figure>
                 </div>
             </section>
-            <section class="p-section-brand">
+            <section class="p-section-brand" aria-label="Trusted clients">
                 <div class="wrapper">
                     <p class="p-section-brand__title">
                         I helped <span class="p-section-brand__high-peoples">280+ peoples</span> to win <br>
@@ -194,30 +192,55 @@
                     </div>
                 </div>
             </section>
-            <section class="p-section-statistics">
+            <section class="p-section-statistics" aria-label="Professional statistics">
                 <div class="wrapper">
                     <ul class="p-section-statistics__list">
                         <li class="p-section-statistics__item">
                             <div class="p-section-statistics__content">
-                                <img src="" alt="">
+                                <div class="p-section-statistics__icon">
+                                    <img src="./assets/icons/icon-experience.svg" alt="" width="48" height="48"
+                                        loading="lazy">
+                                </div>
                                 <div class="p-section-statistics__info">
-                                    <div class="p-section-statistics__title"></div>
+                                    <strong class="p-section-statistics__title">13+</strong>
+                                    <span class="p-section-statistics__label">Years of Experience</span>
                                 </div>
                             </div>
                         </li>
                         <li class="p-section-statistics__item">
                             <div class="p-section-statistics__content">
-                                <img src="" alt="">
+                                <div class="p-section-statistics__icon">
+                                    <img src="./assets/icons/icon-satisfaction.svg" alt="" width="48" height="48"
+                                        loading="lazy">
+                                </div>
+                                <div class="p-section-statistics__info">
+                                    <strong class="p-section-statistics__title">98.5%</strong>
+                                    <span class="p-section-statistics__label">Client Satisfaction</span>
+                                </div>
                             </div>
                         </li>
                         <li class="p-section-statistics__item">
                             <div class="p-section-statistics__content">
-                                <img src="" alt="">
+                                <div class="p-section-statistics__icon">
+                                    <img src="./assets/icons/icon-clients.svg" alt="" width="48" height="48"
+                                        loading="lazy">
+                                </div>
+                                <div class="p-section-statistics__info">
+                                    <strong class="p-section-statistics__title">279+</strong>
+                                    <span class="p-section-statistics__label">Happy Clients</span>
+                                </div>
                             </div>
                         </li>
                         <li class="p-section-statistics__item">
                             <div class="p-section-statistics__content">
-                                <img src="" alt="">
+                                <div class="p-section-statistics__icon">
+                                    <img src="./assets/icons/icon-awards.svg" alt="" width="48" height="48"
+                                        loading="lazy">
+                                </div>
+                                <div class="p-section-statistics__info">
+                                    <strong class="p-section-statistics__title">47+</strong>
+                                    <span class="p-section-statistics__label">Awards</span>
+                                </div>
                             </div>
                         </li>
                     </ul>
@@ -226,7 +249,8 @@
             <section class="p-section-about" id="about">
                 <div class="wrapper">
                     <div class="p-section-about__media">
-                        <img src="./assets/images/winston-potter.png" alt="" width="570" height="500" loading="lazy">
+                        <img src="./assets/images/winston-potter.png" alt="Winston Potter" width="570" height="500"
+                            loading="lazy">
                     </div>
                     <div class="p-section-about__head">
                         <h2 class="p-section-about__title">I'm Winston Potter with a highly dedicated & hard working
@@ -239,7 +263,11 @@
                             volutpat.</p>
                     </div>
                     <!-- c-button c-button--primary -->
-                    <a class="c-button c-button--primary"> <img src="" alt=""> <span class="c-button__text"></span>Download Resume</a>
+                    <a class="c-button c-button--primary" href="./assets/files/winston-potter-resume.pdf" download>
+                        <img class="c-button__icon" src="./assets/icons/icon-download.svg" alt="" width="20" height="20"
+                            loading="lazy">
+                        <span class="c-button__text">Download Resume</span>
+                    </a>
                 </div>
             </section>
             <section class="p-section-education">
@@ -251,13 +279,92 @@
                     </div>
                     <div class="p-section-education__body">
                         <ul class="p-section-education__left">
-                            <li class="p-section-education__item"></li>
-                            <li class="p-section-education__item"></li>
-                            <li class="p-section-education__item"></li>
+                            <li class="p-section-education__item">
+                                <div class="p-section-education__icon">
+                                    <img src="./assets/icons/icon-education-1.svg" alt="" width="48" height="48"
+                                        loading="lazy">
+                                </div>
+                                <div class="p-section-education__content">
+                                    <p class="p-section-education__meta">
+                                        <time datetime="2018">2018</time> to <time datetime="2021">2021</time>
+                                        <span class="p-section-education__school">University of Oxford</span>
+                                    </p>
+                                    <h3 class="p-section-education__item-title">Bachelor of Laws (LL.B)</h3>
+                                    <p class="p-section-education__item-description">
+                                        Mauris tristique, tellus eu commodo vehicula, arcu nunc vehicula nulla, at
+                                        ornare tortor ligula id ligula.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="p-section-education__item">
+                                <div class="p-section-education__icon">
+                                    <img src="./assets/icons/icon-education-2.svg" alt="" width="48" height="48"
+                                        loading="lazy">
+                                </div>
+                                <div class="p-section-education__content">
+                                    <p class="p-section-education__meta">
+                                        <time datetime="2016">2016</time> to <time datetime="2018">2018</time>
+                                        <span class="p-section-education__school">University of Cambridge</span>
+                                    </p>
+                                    <h3 class="p-section-education__item-title">
+                                        Bachelor of Science and Engineering
+                                    </h3>
+                                    <p class="p-section-education__item-description">
+                                        Donec ut arcu libero euismod dapibus lacus ipsum. Phasellus non feugiat turpis,
+                                        non gravida.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="p-section-education__item">
+                                <div class="p-section-education__icon">
+                                    <img src="./assets/icons/icon-education-3.svg" alt="" width="48" height="48"
+                                        loading="lazy">
+                                </div>
+                                <div class="p-section-education__content">
+                                    <p class="p-section-education__meta">
+                                        <time datetime="2013">2013</time> to <time datetime="2016">2016</time>
+                                        <span class="p-section-education__school">University of Cambridge</span>
+                                    </p>
+                                    <h3 class="p-section-education__item-title">Bachelor of Communication</h3>
+                                    <p class="p-section-education__item-description">
+                                        Donec ut arcu libero euismod dapibus lacus ipsum. Phasellus non feugiat turpis,
+                                        non gravida.
+                                    </p>
+                                </div>
+                            </li>
                         </ul>
                         <ul class="p-section-education__right">
-                            <li class="p-section-education__awwwards"></li>
-                            <li class="p-section-education__awwwards"></li>
+                            <li class="p-section-education__awwwards p-section-education__award">
+                                <div class="p-section-education__award-media">
+                                    <img src="./assets/images/award-1.png" alt="Best Lawyer of the Month award"
+                                        width="120" height="160" loading="lazy">
+                                </div>
+                                <div class="p-section-education__award-content">
+                                    <p class="p-section-education__award-meta">
+                                        <time datetime="2020-12-03">Dec 3, 2020</time>
+                                    </p>
+                                    <h3 class="p-section-education__award-title">Best Lawyer of the Month.</h3>
+                                    <p class="p-section-education__award-description">
+                                        Nulla et volutpat erat, et mattis urna. Morbi laoreet posuere ut pretium
+                                        facilisis.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="p-section-education__awwwards p-section-education__award">
+                                <div class="p-section-education__award-media">
+                                    <img src="./assets/images/award-2.png" alt="Top 40 Young Lawyers award" width="120"
+                                        height="160" loading="lazy">
+                                </div>
+                                <div class="p-section-education__award-content">
+                                    <p class="p-section-education__award-meta">
+                                        <time datetime="2019-12-17">Dec 17, 2019</time>
+                                    </p>
+                                    <h3 class="p-section-education__award-title">Top 40 Young Lawyers Awards.</h3>
+                                    <p class="p-section-education__award-description">
+                                        Duis magna risus, convallis vel purus eu, sollicitudin volutpat velit.
+                                    </p>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -266,31 +373,278 @@
                 <div class="wrapper">
                     <div class="p-section-feedback__head">
                         <h2 class="p-section-feedback__title">My clients feedback</h2>
-                        <p class="p-section-feedback__description">Sed ac posuere neque, scelerisque porta nulla. Aliquam erat volutpat. Nulla in mi malesuada, luctus nibh quis, rutrum arcu.</p>
+                        <p class="p-section-feedback__description">Sed ac posuere neque, scelerisque porta nulla.
+                            Aliquam erat volutpat. Nulla in mi malesuada, luctus nibh quis, rutrum arcu.</p>
                     </div>
                     <div class="p-section-feedback__body">
-
+                        <button class="p-section-feedback__button p-section-feedback__button--prev js-feedback-prev"
+                            type="button" aria-label="Previous feedback">
+                            <img src="./assets/icons/icon-arrow-left.svg" alt="" width="20" height="20" loading="lazy">
+                        </button>
+                        <div class="p-section-feedback__slider js-feedback-slider">
+                            <article class="p-section-feedback__item">
+                                <div class="p-section-feedback__quote-icon">
+                                    <img src="./assets/icons/icon-quote.svg" alt="" width="64" height="48"
+                                        loading="lazy">
+                                </div>
+                                <blockquote class="p-section-feedback__quote">
+                                    Winston is a professional lawyer with extensive knowledge and experience. He
+                                    listened carefully, explained every step clearly, and helped us reach the best
+                                    possible outcome.
+                                </blockquote>
+                                <div class="p-section-feedback__client">
+                                    <div class="p-section-feedback__avatar">
+                                        <img src="./assets/images/client-avatar.png" alt="Robert Fox" width="56"
+                                            height="56" loading="lazy">
+                                    </div>
+                                    <div class="p-section-feedback__client-info">
+                                        <cite class="p-section-feedback__client-name">Robert Fox</cite>
+                                        <span class="p-section-feedback__client-position">CEO, Google</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <button class="p-section-feedback__button p-section-feedback__button--next js-feedback-next"
+                            type="button" aria-label="Next feedback">
+                            <img src="./assets/icons/icon-arrow-right.svg" alt="" width="20" height="20" loading="lazy">
+                        </button>
                     </div>
                 </div>
             </section>
             <section class="p-section-blog" id="article">
                 <div class="wrapper">
-
+                    <div class="p-section-blog__head">
+                        <h2 class="p-section-blog__title">Blog &amp; News</h2>
+                        <p class="p-section-blog__description">
+                            Sed ac posuere neque, scelerisque porta nulla. Aliquam erat volutpat. Nulla in mi malesuada,
+                            luctus nibh quis, rutrum arcu.
+                        </p>
+                    </div>
+                    <ul class="p-section-blog__list">
+                        <li class="p-section-blog__item">
+                            <article class="c-blog-card">
+                                <div class="c-blog-card__media">
+                                    <img src="./assets/images/blog-1.jpg" alt="Colorful abstract smoke" width="370"
+                                        height="240" loading="lazy">
+                                </div>
+                                <div class="c-blog-card__content">
+                                    <p class="c-blog-card__meta">
+                                        <time datetime="2021-12-22">22 Dec, 2021</time>
+                                        <span class="c-blog-card__comments">24 Comments</span>
+                                    </p>
+                                    <h3 class="c-blog-card__title">
+                                        Duis magna risus, convallis vel purus eu sollicitudin volutpat velit.
+                                    </h3>
+                                    <p class="c-blog-card__description">
+                                        Maecenas blandit auctor tempor. Class aptent taciti sociosqu ad litora torquent
+                                        per conubia nostra.
+                                    </p>
+                                    <a href="#" class="c-button c-button--small">Read More</a>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="p-section-blog__item">
+                            <article class="c-blog-card">
+                                <div class="c-blog-card__media">
+                                    <img src="./assets/images/blog-2.jpg" alt="Cryptocurrency coins" width="370"
+                                        height="240" loading="lazy">
+                                </div>
+                                <div class="c-blog-card__content">
+                                    <p class="c-blog-card__meta">
+                                        <time datetime="2021-12-15">15 Dec, 2021</time>
+                                        <span class="c-blog-card__comments">24 Comments</span>
+                                    </p>
+                                    <h3 class="c-blog-card__title">
+                                        Donec ut arcu libero euismod dapibus id quis ipsum.
+                                    </h3>
+                                    <p class="c-blog-card__description">
+                                        Phasellus non feugiat turpis, non gravida lorem. Nulla fermentum odio in dolor
+                                        dapibus.
+                                    </p>
+                                    <a href="#" class="c-button c-button--small">Read More</a>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="p-section-blog__item">
+                            <article class="c-blog-card">
+                                <div class="c-blog-card__media">
+                                    <img src="./assets/images/blog-3.jpg" alt="Lifeguard chair beside the sea"
+                                        width="370" height="240" loading="lazy">
+                                </div>
+                                <div class="c-blog-card__content">
+                                    <p class="c-blog-card__meta">
+                                        <time datetime="2021-11-24">24 Nov, 2021</time>
+                                        <span class="c-blog-card__comments">24 Comments</span>
+                                    </p>
+                                    <h3 class="c-blog-card__title">
+                                        Maecenas congue cursus metus eget bibendum phasellus dignissim.
+                                    </h3>
+                                    <p class="c-blog-card__description">
+                                        Praesent semper enim at lacus sagittis, non semper eros ullamcorper.
+                                    </p>
+                                    <a href="#" class="c-button c-button--small">Read More</a>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
                 </div>
             </section>
             <section class="p-section-contact" id="contact">
                 <div class="wrapper">
-
+                    <div class="p-section-contact__information">
+                        <div class="p-section-contact__head">
+                            <h2 class="p-section-contact__title">
+                                Are you facing any problem,<br>
+                                Book an appointment!
+                            </h2>
+                            <p class="p-section-contact__description">
+                                Aliquam neque diam, tincidunt a lacinia quis, imperdiet quis quam. Phasellus id libero
+                                purus. Fusce vestibulum luctus velit.
+                            </p>
+                        </div>
+                        <address class="p-section-contact__address">
+                            <a class="p-section-contact__address-item" href="mailto:kevin.gilbert@example.com">
+                                <div class="p-section-contact__address-icon">
+                                    <img src="./assets/icons/icon-email.svg" alt="" width="28" height="28"
+                                        loading="lazy">
+                                </div>
+                                <span class="p-section-contact__address-content">
+                                    <span class="p-section-contact__address-label">Email with me</span>
+                                    <strong class="p-section-contact__address-value">
+                                        kevin.gilbert@example.com
+                                    </strong>
+                                </span>
+                            </a>
+                            <a class="p-section-contact__address-item" href="tel:+12025560190">
+                                <div class="p-section-contact__address-icon">
+                                    <img src="./assets/icons/icon-phone.svg" alt="" width="28" height="28"
+                                        loading="lazy">
+                                </div>
+                                <span class="p-section-contact__address-content">
+                                    <span class="p-section-contact__address-label">Call me</span>
+                                    <strong class="p-section-contact__address-value">+1 202 556 0190</strong>
+                                </span>
+                            </a>
+                        </address>
+                    </div>
+                    <div class="p-section-contact__form-area">
+                        <h2 class="p-section-contact__form-title">Book Appointment With Me.</h2>
+                        <p class="p-section-contact__form-description">
+                            Do you have an insight into me or do you want to get started with your project and need my
+                            help? Feel free to contact me. I will reply within 48 hours.
+                        </p>
+                        <form class="p-section-contact__form" action="#" method="post">
+                            <div class="p-section-contact__form-row">
+                                <div class="p-section-contact__field">
+                                    <label class="p-section-contact__label" for="full-name">Full Name</label>
+                                    <input class="p-section-contact__input" id="full-name" name="full-name" type="text"
+                                        placeholder="Full Name" autocomplete="name" required>
+                                </div>
+                                <div class="p-section-contact__field">
+                                    <label class="p-section-contact__label" for="email-address">Email Address</label>
+                                    <input class="p-section-contact__input" id="email-address" name="email-address"
+                                        type="email" placeholder="Email Address" autocomplete="email" required>
+                                </div>
+                            </div>
+                            <div class="p-section-contact__field">
+                                <label class="p-section-contact__label" for="subject">Subject</label>
+                                <input class="p-section-contact__input" id="subject" name="subject" type="text"
+                                    placeholder="Subject" required>
+                            </div>
+                            <div class="p-section-contact__form-row">
+                                <div class="p-section-contact__field">
+                                    <label class="p-section-contact__label" for="appointment-date">Date</label>
+                                    <input class="p-section-contact__input" id="appointment-date"
+                                        name="appointment-date" type="date" required>
+                                </div>
+                                <div class="p-section-contact__field">
+                                    <label class="p-section-contact__label" for="appointment-time">Time</label>
+                                    <select class="p-section-contact__select" id="appointment-time"
+                                        name="appointment-time" required>
+                                        <option value="">Select Time</option>
+                                        <option value="09:00">09:00 AM</option>
+                                        <option value="10:00">10:00 AM</option>
+                                        <option value="11:00">11:00 AM</option>
+                                        <option value="14:00">02:00 PM</option>
+                                        <option value="15:00">03:00 PM</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="p-section-contact__field">
+                                <label class="p-section-contact__label" for="message">Message</label>
+                                <textarea class="p-section-contact__textarea" id="message" name="message"
+                                    placeholder="Message" rows="6" required></textarea>
+                            </div>
+                            <button class="c-button c-button--primary" type="submit">Book Appointment</button>
+                        </form>
+                    </div>
                 </div>
             </section>
         </main>
         <footer class="l-footer">
             <div class="wrapper">
-
+                <div class="l-footer__main">
+                    <a href="./index.html" class="l-footer__logo">
+                        <img src="./assets/images/logo-footer.svg" alt="Winston Potter" class="l-footer__logo-image"
+                            width="228" height="56" loading="lazy">
+                    </a>
+                    <nav class="l-footer__nav" aria-label="Footer navigation">
+                        <ul class="l-footer__nav-list">
+                            <li class="l-footer__nav-item">
+                                <a href="#home" class="l-footer__nav-link">Home</a>
+                            </li>
+                            <li class="l-footer__nav-item">
+                                <a href="#about" class="l-footer__nav-link">About</a>
+                            </li>
+                            <li class="l-footer__nav-item">
+                                <a href="#testimonial" class="l-footer__nav-link">Testimonial</a>
+                            </li>
+                            <li class="l-footer__nav-item">
+                                <a href="#article" class="l-footer__nav-link">Article</a>
+                            </li>
+                            <li class="l-footer__nav-item">
+                                <a href="#contact" class="l-footer__nav-link">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="l-footer__social">
+                        <ul class="l-footer__social-list">
+                            <li class="l-footer__social-item">
+                                <a class="l-footer__social-link" href="#" aria-label="Facebook">
+                                    <img src="./assets/icons/icon-facebook.svg" alt="" width="16" height="16"
+                                        loading="lazy">
+                                </a>
+                            </li>
+                            <li class="l-footer__social-item">
+                                <a class="l-footer__social-link" href="#" aria-label="Twitter">
+                                    <img src="./assets/icons/icon-twitter.svg" alt="" width="16" height="16"
+                                        loading="lazy">
+                                </a>
+                            </li>
+                            <li class="l-footer__social-item">
+                                <a class="l-footer__social-link" href="#" aria-label="LinkedIn">
+                                    <img src="./assets/icons/icon-linkedin.svg" alt="" width="16" height="16"
+                                        loading="lazy">
+                                </a>
+                            </li>
+                            <li class="l-footer__social-item">
+                                <a class="l-footer__social-link" href="#" aria-label="Video channel">
+                                    <img src="./assets/icons/icon-video.svg" alt="" width="16" height="16"
+                                        loading="lazy">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="l-footer__bottom">
+                    <p class="l-footer__copyright">
+                        &copy; 2026 Winston Potter. All rights reserved.
+                    </p>
+                </div>
             </div>
         </footer>
     </div>
-    <script src="./js/main.js"></script>
+    <script src="./js/main.js" defer></script>
 </body>
 
 </html>
