@@ -16,48 +16,95 @@
         <header class="l-header">
             <div class="wrapper">
                 <a href="./index.html" class="l-header__logo">
-                    <img src="./assets/images/logo.svg" alt="logo" class="l-header__logo-image" width="228" height="56"
-                        loading="eager">
+                    <img class="l-header__logo-image" src="./assets/images/logo.svg" alt="Winston Potter" width="228"
+                        height="56" loading="eager">
                 </a>
-                <nav class="l-header__nav">
-                    <ul class="l-header__nav-list">
-                        <li class="l-header__nav-item"><a href="#home" class="l-header__nav-link">Home</a></li>
-                        <li class="l-header__nav-item"><a href="#about" class="l-header__nav-link">About</a></li>
-                        <li class="l-header__nav-item"><a href="#testimonial" class="l-header__nav-link">Testimonial</a>
-                        </li>
-                        <li class="l-header__nav-item"><a href="#project" class="l-header__nav-link">Project</a></li>
-                        <li class="l-header__nav-item"><a href="#services" class="l-header__nav-link">Services</a></li>
-                        <li class="l-header__nav-item"><a href="#article" class="l-header__nav-link">Article</a></li>
-                        <li class="l-header__nav-item"><a href="#contact" class="l-header__nav-link">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="l-header__social">
-                    <ul class="l-header__social-list">
-                        <li class="l-header__social-item">
-                            <a class="l-header__social-link" href="#">
-                                <img alt="icon-facebook" src="./assets/icons/icon-facebook.svg" width="16" height="16"
-                                    loading="eager">
-                            </a>
-                        </li>
-                        <li class="l-header__social-item">
-                            <a class="l-header__social-link" href="#">
-                                <img alt="icon-twitter" src="./assets/icons/icon-twitter.svg" width="16" height="16"
-                                    loading="eager">
-                            </a>
-                        </li>
-                        <li class="l-header__social-item">
-                            <a class="l-header__social-link" href="#">
-                                <img alt="icon-linkedin.svg" src="./assets/icons/icon-linkedin.svg" width="16"
-                                    height="16" loading="eager">
-                            </a>
-                        </li>
-                        <li class="l-header__social-item">
-                            <a class="l-header__social-link" href="#">
-                                <img alt="icon-video" src="./assets/icons/icon-video.svg" width="16" height="16"
-                                    loading="eager">
-                            </a>
-                        </li>
-                    </ul>
+
+                <button class="l-header__menu-button js-menu-button" type="button" aria-label="Open navigation"
+                    aria-expanded="false" aria-controls="global-navigation">
+                    <span class="l-header__menu-line"></span>
+                    <span class="l-header__menu-line"></span>
+                    <span class="l-header__menu-line"></span>
+                </button>
+
+                <div class="l-header__menu js-menu" id="global-navigation">
+                    <nav class="l-header__nav" aria-label="Primary navigation">
+                        <ul class="l-header__nav-list">
+                            <li class="l-header__nav-item">
+                                <a href="#home" class="l-header__nav-link">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li class="l-header__nav-item">
+                                <a href="#about" class="l-header__nav-link">
+                                    About
+                                </a>
+                            </li>
+
+                            <li class="l-header__nav-item">
+                                <a href="#testimonial" class="l-header__nav-link">
+                                    Testimonial
+                                </a>
+                            </li>
+
+                            <li class="l-header__nav-item">
+                                <a href="#project" class="l-header__nav-link">
+                                    Project
+                                </a>
+                            </li>
+
+                            <li class="l-header__nav-item">
+                                <a href="#services" class="l-header__nav-link">
+                                    Services
+                                </a>
+                            </li>
+
+                            <li class="l-header__nav-item">
+                                <a href="#article" class="l-header__nav-link">
+                                    Article
+                                </a>
+                            </li>
+
+                            <li class="l-header__nav-item">
+                                <a href="#contact" class="l-header__nav-link">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="l-header__social">
+                        <ul class="l-header__social-list">
+                            <li class="l-header__social-item">
+                                <a class="l-header__social-link" href="#" aria-label="Facebook">
+                                    <img src="./assets/icons/icon-facebook.svg" alt="" width="16" height="16"
+                                        loading="eager">
+                                </a>
+                            </li>
+
+                            <li class="l-header__social-item">
+                                <a class="l-header__social-link" href="#" aria-label="Twitter">
+                                    <img src="./assets/icons/icon-twitter.svg" alt="" width="16" height="16"
+                                        loading="eager">
+                                </a>
+                            </li>
+
+                            <li class="l-header__social-item">
+                                <a class="l-header__social-link" href="#" aria-label="LinkedIn">
+                                    <img src="./assets/icons/icon-linkedin.svg" alt="" width="16" height="16"
+                                        loading="eager">
+                                </a>
+                            </li>
+
+                            <li class="l-header__social-item">
+                                <a class="l-header__social-link" href="#" aria-label="Video channel">
+                                    <img src="./assets/icons/icon-video.svg" alt="" width="16" height="16"
+                                        loading="eager">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </header>
@@ -712,7 +759,7 @@
             </div>
         </footer>
     </div>
-    <script src="./js/main.js" defer></script>
+    <script src="./js/scripts.js" defer></script>
 </body>
 
 </html>
