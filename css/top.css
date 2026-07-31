@@ -255,7 +255,7 @@
 
 .p-section-education__item {
     display: flex;
-    align-items: flex-start;
+    /* align-items: flex-start; */
 }
 
 .p-section-education__icon {
@@ -448,7 +448,7 @@
 }
 
 .p-section-blog__item {
-    flex: 0 0 calc((100% - 48px) / 3);
+    width: calc((100% - 48px) / 3);
 }
 
 .c-blog-card {
@@ -871,7 +871,16 @@
 
     .p-section-education__icon {
         margin-right: 24px;
-        padding: 35px;
+        width: 112px;
+        height: 112px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .p-section-education__image {
+        width: 40px;
+        height: 40px;
     }
 
     .p-section-education__meta {
