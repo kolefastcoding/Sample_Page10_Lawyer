@@ -306,9 +306,7 @@ img {
         flex-wrap: wrap;
         gap: 24px;
     }
-
     .l-header__nav-link {
-        padding-bottom: 37px;
         border-bottom: 3px solid transparent;
         white-space: nowrap;
     }
